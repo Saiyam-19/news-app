@@ -1,0 +1,21 @@
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  

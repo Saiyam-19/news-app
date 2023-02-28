@@ -1,8 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import newsReducer from '../reducers/newsReducer';
+import favoritesReducer from '../reducers/favoritesReducer';
+import filtersReducer from '../reducers/filtersReducer';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    counter: counterReducer,
-  },
+    news: newsReducer,
+    favorites: favoritesReducer,
+    filters: filtersReducer
+  }
 });
+
+export default store;
